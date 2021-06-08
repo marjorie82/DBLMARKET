@@ -7,3 +7,8 @@
 	path = crbll0/growit_employee
 	url = git@github.com:crbll0/growit_employee.git
 	branch = main
+
+[submodule "crbll0/growit_account"]
+	path = crbll0/growit_account
+	url = git@github.com:crbll0/growit_account.git
+	branch = main
