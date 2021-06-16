@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+      <report id="vendor_csv_bank"
+              model="account.payment"
+              string="Imprimir CSV Pagos de Proveedor"
+              report_type="csv"
+              name="report_csv.vendor_csv_bank"
+              file="account_payment"
+              attachment_use="False"/>
+
+      <record id="res_bank_custom_payment" model="ir.ui.view">
+          <field name="name">custom bank payment code</field>
+          <field name="model">res.bank</field>
+          <field name="inherit_id" ref="base.view_res_bank_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='bic']" position="after">
+                  <field name="payment_code"/>
+              </xpath>
+          </field>
+      </record>
+  </data>
+</odoo>
