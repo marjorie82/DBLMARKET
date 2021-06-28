@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+  <record id="modify_res_partner_add" model="ir.ui.view">
+    <field name="name">res_partner.modify_res_partner</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='name']" position="after">
+            <button name="validar_rnc" string="VALIDAR RNC" type="object"/>
+        </xpath>
+    </field>
+</record>
+  </data>
+</odoo>
