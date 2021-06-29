@@ -22,7 +22,7 @@ class TxtBankReport(models.AbstractModel):
                 'CC': 'CC',
                 'proveedor': obj.partner_id.name,
                 'C': 'C',
-                'monto': obj.amount,
+                'monto': '{:.2f}'.format(obj.amount),
                 'codigo de proveedor': obj.partner_id.ref,
                 'Pago ACH': 'PAGO ACH'
             })
