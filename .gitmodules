@@ -12,3 +12,8 @@
 	path = crbll0/growit_account
 	url = git@github.com:crbll0/growit_account.git
 	branch = main
+
+[submodule "OCA/reporting-engine"]
+	path = OCA/reporting-engine
+	url = git@github.com:OCA/reporting-engine.git
+	branch = 13.0
